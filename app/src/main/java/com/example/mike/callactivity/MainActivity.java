@@ -48,7 +48,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
         textView = (TextView)findViewById(R.id.txt1);
 
         getCallDetails();
-
+        getWindow().setSoftInputMode(
+         WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN
+                                                       );
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
